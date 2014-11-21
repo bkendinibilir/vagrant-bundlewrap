@@ -8,9 +8,9 @@ Gem::Specification.new do |spec|
   spec.version       = Vagrant::Bundlewrap::VERSION
   spec.authors       = ["Benjamin Kendinibilir"]
   spec.email         = ["bkendinibilir@seibert-media.net"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
-  spec.homepage      = ""
+  spec.summary       = "Vagrant BundleWrap provisioner."
+  spec.description   = "Enables Vagrant to provision machines with BundleWrap. This Plugin is formerly known as 'vagrant-blockwart'."
+  spec.homepage      = "https://github.com/bkendinibilir/vagrant-bundlewrap"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
@@ -20,4 +20,5 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency "bundler", "~> 1.5"
   spec.add_development_dependency "rake"
+  spec.add_runtime_dependency "ssh-config", "~> 0.1.3"
 end

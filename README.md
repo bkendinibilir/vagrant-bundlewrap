@@ -1,28 +1,20 @@
-# Vagrant::Bundlewrap
+# Vagrant BundleWrap Provisioner
 
-TODO: Write a gem description
+This is a [Vagrant](http://www.vagrantup.com) plugin that adds an [BundleWrap](http://bundlewrap.org) provisioner to Vagrant, supporting to provision your virtual machines with a local BundleWrap repository.
 
 ## Installation
 
-Add this line to your application's Gemfile:
+First [install BundleWrap](http://docs.bundlewrap.org/en/latest/installation.html):
 
-    gem 'vagrant-bundlewrap'
+	pip install bundlewrap
 
-And then execute:
+Then just type it on your vagrant environment:
 
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install vagrant-bundlewrap
-
-## Usage
-
-TODO: Write usage instructions here
+	vagrant plugin install vagrant-bundlewrap
 
 ## Contributing
 
-1. Fork it ( http://github.com/<my-github-username>/vagrant-bundlewrap/fork )
+1. Fork it ( http://github.com/bkendinibilir/vagrant-bundlewrap/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)

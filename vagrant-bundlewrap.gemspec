@@ -5,7 +5,7 @@ require 'vagrant/bundlewrap/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "vagrant-bundlewrap"
-  spec.version       = Vagrant::Bundlewrap::VERSION
+  spec.version       = Vagrant::BundleWrap::VERSION
   spec.authors       = ["Benjamin Kendinibilir"]
   spec.email         = ["bkendinibilir@seibert-media.net"]
   spec.summary       = "Vagrant BundleWrap provisioner."

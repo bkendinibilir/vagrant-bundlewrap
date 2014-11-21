@@ -1,5 +1,0 @@
-module Vagrant
-  module Bundlewrap
-    VERSION = "0.0.1"
-  end
-end

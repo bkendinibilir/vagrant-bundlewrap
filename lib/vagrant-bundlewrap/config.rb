@@ -4,6 +4,7 @@ module VagrantPlugins
             attr_accessor :repo_path
     		attr_accessor :node_name
     		attr_accessor :node_host
+    		attr_accessor :debug
             attr_accessor :interactive
 
 
@@ -12,12 +13,14 @@ module VagrantPlugins
     			@node_name = UNSET_VALUE
     			@node_host = UNSET_VALUE
                 @interactive = UNSET_VALUE
+                @debug = UNSET_VALUE
     		end
 
     		def finalize!
     			@repo_path = "bundlewrap/" if @repo_path == UNSET_VALUE
                 @node_name = nil if @node_name == UNSET_VALUE
     			@node_host = nil if @node_host == UNSET_VALUE
+			@debug = false if @debug == UNSET_VALUE
                 @interactive = false if @interactive == UNSET_VALUE
     		end
 

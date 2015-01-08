@@ -18,7 +18,7 @@ module VagrantPlugins
 				ssh = SshConf.new
 				ssh.update(config.node_host, @machine.ssh_info)
 				bw = BwManage.new(config.repo_path)
-				bw.apply(config.node_name, config.interactive)
+				bw.apply(config.node_name, config.debug, config.interactive)
 			end
 
 			def cleanup

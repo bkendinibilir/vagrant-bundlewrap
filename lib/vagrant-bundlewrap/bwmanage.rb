@@ -29,13 +29,17 @@ module VagrantPlugins
 				return nodes.split("\n")
 			end
 
-			def apply(node, interactive=false)
+			def apply(node, debug=false, interactive=false)
 				node = node.gsub(/[^a-zA-Z0-9\-\_\.]/,'')
-				if interactive
-					return bw_cli("apply #{node} -i", ret_stdout=false)
-				else
-					return bw_cli("apply #{node}", ret_stdout=false)
+				cmd = ""
+				if debug
+					cmd = cmd + "--debug "
 				end
+				cmd = cmd + "apply "
+				if interactive
+					cmd = cmd + "--interactive "
+				end
+				return bw_cli(cmd + node, ret_stdout=false)
 			end
 
 		end

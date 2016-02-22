@@ -31,7 +31,7 @@ module VagrantPlugins
 
       def apply(node, debug=false, interactive=false)
         node = node.gsub(/[^a-zA-Z0-9\-\_\.]/,'')
-        cmd = ""
+        cmd = "--add-host-keys "
         if debug
           cmd = cmd + "--debug "
         end
